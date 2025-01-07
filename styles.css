@@ -38,29 +38,36 @@
     text-align: center;
   }
   
-  .nav-menu {
+  /* Dropdown Menu */
+.nav-menu {
     list-style: none;
     display: inline-flex;
-    gap: 100px;
-  }
-  
-  .nav-menu li {
+    gap: 50px;
+}
+
+.nav-menu li {
     position: relative;
-  }
-  
-  .nav-menu a {
+}
+
+.nav-menu a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
-  }
-  
-  .nav-menu a:hover {
+}
+
+.nav-menu a:hover {
     color: #ffd700;
-  }
-  
-  /* Dropdown Menu */
-  .dropdown-menu {
+}
+
+/* Arrow Indicator */
+.nav-menu a::after {
+    content: ' \25BC'; /* Down-pointing arrow */
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.nav-menu .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -70,28 +77,35 @@
     display: none;
     text-align: left;
     min-width: 150px;
-  }
-  
-  .dropdown-menu li {
+    z-index: 999;
+}
+
+.nav-menu .dropdown-menu li {
     padding: 5px 20px;
-  }
-  
-  .dropdown-menu li a {
+}
+
+.nav-menu .dropdown-menu li a {
     color: #fff;
     font-size: 14px;
     display: block;
-  }
-  
-  .dropdown:hover .dropdown-menu {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu .dropdown-menu li a:hover {
+    color: #ffd700;
+}
+
+.nav-menu .dropdown:hover .dropdown-menu {
     display: block;
-  }
-  
-  /* Get Quote Button */
-  .header-right {
+}
+
+/* Get Quote Button */
+.header-right {
     margin-left: auto;
-  }
-  
-  .get-quote {
+}
+
+.get-quote {
     padding: 10px 20px;
     font-size: 14px;
     border: none;
@@ -100,11 +114,12 @@
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s ease;
-  }
-  
-  .get-quote:hover {
+}
+
+.get-quote:hover {
     background: #fff;
-  }
+}
+
   
   /* Hero Section */
   .hero {
@@ -122,6 +137,27 @@
     object-fit: cover;
     z-index: -1;
   }
+  
+/* Get Quote Button */
+.header-right {
+    margin-left: auto;
+}
+
+.get-quote {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background: #ffd700;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.get-quote:hover {
+    background: #fff;
+}
+
   
   .hero-content {
     position: absolute;

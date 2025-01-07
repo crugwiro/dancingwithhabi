@@ -14,7 +14,13 @@
     </div>
     <nav>
       <ul class="nav-menu">
-        <li><a href="#events">Events</a></li>
+        <li class="dropdown">
+          <a href="#events">Events</a>
+          <ul class="dropdown-menu">
+            <li><a href="#upcoming">Upcoming Events</a></li>
+            <li><a href="#past">Past Events</a></li>
+          </ul>
+        </li>
         <li class="dropdown">
           <a href="#classes">Classes</a>
           <ul class="dropdown-menu">
@@ -23,7 +29,13 @@
             <li><a href="#advanced">Advanced</a></li>
           </ul>
         </li>
-        <li><a href="#footage">Footage</a></li>
+        <li class="dropdown">
+          <a href="#footage">Footage</a>
+          <ul class="dropdown-menu">
+            <li><a href="#class-footage">Class Footage</a></li>
+            <li><a href="#event-footage">Event Footage</a></li>
+          </ul>
+        </li>
       </ul>
     </nav>
     <div class="header-right">
@@ -33,19 +45,17 @@
 
   <section class="hero">
     <video autoplay loop muted>
-      <source src="dance.MP4" type="video/mp4">
+      <source src="dance.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
     <div class="hero-content">
       <h1>Unleash Your Passion for Dance</h1>
-      <p>Discover classes, join events, and Create Community.</p>
+      <p>Discover classes, join events, and create a community.</p>
       <div class="hero-buttons">
         <button onclick="window.location.href='#classes'">Book a Class</button>
         <button onclick="window.location.href='your-footage-download-link.zip'">Download Footage</button>
       </div>
     </div>
   </section>
-
-  <!-- Rest of the content -->
 </body>
 </html>
