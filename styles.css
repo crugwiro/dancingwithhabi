@@ -11,6 +11,7 @@
     color: #fff;
   }
   
+  /* Header Styles */
   header {
     display: flex;
     justify-content: space-between;
@@ -22,36 +23,90 @@
     z-index: 1000;
   }
   
-  .logo-container {
-    display: flex;
-    align-items: center;
-  }
-  
   .logo-container img {
     height: 40px;
     margin-right: 10px;
   }
-  
-  header nav ul {
-    list-style: none;
+  .logo-container {
     display: flex;
+    align-items: center;
+    font-family: 'Brush Script MT', cursive;
   }
   
-  header nav ul li {
-    margin: 0 15px;
+  nav {
+    flex: 1;
+    text-align: center;
   }
   
-  header nav ul li a {
+  .nav-menu {
+    list-style: none;
+    display: inline-flex;
+    gap: 100px;
+  }
+  
+  .nav-menu li {
+    position: relative;
+  }
+  
+  .nav-menu a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
     transition: color 0.3s ease;
   }
   
-  header nav ul li a:hover {
+  .nav-menu a:hover {
     color: #ffd700;
   }
   
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    text-align: left;
+    min-width: 150px;
+  }
+  
+  .dropdown-menu li {
+    padding: 5px 20px;
+  }
+  
+  .dropdown-menu li a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Get Quote Button */
+  .header-right {
+    margin-left: auto;
+  }
+  
+  .get-quote {
+    padding: 10px 20px;
+    font-size: 14px;
+    border: none;
+    background: #ffd700;
+    color: #000;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .get-quote:hover {
+    background: #fff;
+  }
+  
+  /* Hero Section */
   .hero {
     position: relative;
     height: 100vh;
@@ -77,20 +132,19 @@
   }
   
   .hero-content h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
   
   .hero-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 30px;
   }
   
-  /* Hero Section Buttons */
-.hero-buttons {
+  .hero-buttons {
     position: absolute;
-    bottom: -80px; /* Adjust this value to move buttons closer/farther from the bottom */
+    bottom: -50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -119,58 +173,5 @@
   
   .hero-buttons button:hover {
     opacity: 0.9;
-  }
-  
-  
-  section {
-    padding: 60px 20px;
-    text-align: center;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    font-size: 1rem;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .cta-buttons {
-    text-align: center;
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.8);
-  }
-  
-  .cta-buttons button {
-    padding: 15px 30px;
-    margin: 10px;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cta-buttons button:first-child {
-    background: #ffd700;
-    color: #000;
-  }
-  
-  .cta-buttons button:last-child {
-    background: #333;
-    color: #fff;
-  }
-  
-  .cta-buttons button:hover {
-    opacity: 0.9;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 20px;
-    background: rgba(0, 0, 0, 0.8);
   }
   

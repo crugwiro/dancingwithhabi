@@ -9,16 +9,26 @@
 <body>
   <header>
     <div class="logo-container">
-      <img src="https://i.ibb.co/w479FwH/IMG-7537.png" alt="Dancing with Habi Logo">
-      <span>Dancing with Habi</span>
+        <img src="https://i.ibb.co/w479FwH/IMG-7537.png" alt="Dancing with Habi Logo">
+        <span>Dancing with Habi</span>
     </div>
     <nav>
-      <ul>
-        <li><a href="#classes">Dance Classes</a></li>
+      <ul class="nav-menu">
         <li><a href="#events">Events</a></li>
+        <li class="dropdown">
+          <a href="#classes">Classes</a>
+          <ul class="dropdown-menu">
+            <li><a href="#beginner">Beginner</a></li>
+            <li><a href="#intermediate">Intermediate</a></li>
+            <li><a href="#advanced">Advanced</a></li>
+          </ul>
+        </li>
         <li><a href="#footage">Footage</a></li>
       </ul>
     </nav>
+    <div class="header-right">
+      <button class="get-quote" onclick="alert('Get a Quote')">Get Quote</button>
+    </div>
   </header>
 
   <section class="hero">
@@ -28,7 +38,7 @@
     </video>
     <div class="hero-content">
       <h1>Unleash Your Passion for Dance</h1>
-      <p>Discover classes, join events, and relive the moments with our exclusive footage.</p>
+      <p>Discover classes, join events, and Create Community.</p>
       <div class="hero-buttons">
         <button onclick="window.location.href='#classes'">Book a Class</button>
         <button onclick="window.location.href='your-footage-download-link.zip'">Download Footage</button>
@@ -36,28 +46,6 @@
     </div>
   </section>
 
-  <section id="classes">
-    <h2>Book Your Dance Class</h2>
-    <p>Explore a variety of dance styles, from salsa to hip-hop. Choose your schedule and join the fun!</p>
-  </section>
-
-  <section id="events">
-    <h2>Upcoming Events</h2>
-    <p>Stay updated with our latest dance events and competitions. Never miss a beat!</p>
-  </section>
-
-  <section id="footage">
-    <h2>Relive the Magic</h2>
-    <p>Watch exclusive footage from our previous dance sessions and events.</p>
-  </section>
-
-  <section class="cta-buttons">
-    <button onclick="window.location.href='#classes'">Book a Class</button>
-    <button onclick="alert('Thank you for subscribing!')">Subscribe to Newsletter</button>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Dancing with Habi. All Rights Reserved.</p>
-  </footer>
+  <!-- Rest of the content -->
 </body>
 </html>
