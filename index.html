@@ -5,33 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dancing with Habi</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-  <!-- Hero Section -->
+  <header>
+    <div class="logo-container">
+      <img src="https://i.ibb.co/w479FwH/IMG-7537.png" alt="Dancing with Habi Logo">
+      <span>Dancing with Habi</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#classes">Dance Classes</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#footage">Footage</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <section class="hero">
-    <video autoplay muted loop class="background-video">
+    <video autoplay loop muted>
       <source src="dance.MP4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-    <div class="overlay">
-      <nav class="navbar">
-        <img src="https://i.ibb.co/w479FwH/IMG-7537.png" alt="Dancing with Habi Logo" class="logo">
-        <ul class="nav-links">
-          <li><a href="#classes">Programs</a></li>
-          <li><a href="#about">About Us</a></li>
-        </ul>
-      </nav>
-      <hr class="line-separator">
-      <div class="hero-content">
-        <h1>DANCING WITH HABI</h1>
-        <p>Your gateway to mastering Afro-Dancehall!</p>
-        <div class="cta-buttons">
-          <a href="#classes" class="btn">Book a Class</a>
-          <a href="#newsletter" class="btn btn-secondary">Join Newsletter</a>
-        </div>
+    <div class="hero-content">
+      <h1>Unleash Your Passion for Dance</h1>
+      <p>Discover classes, join events, and relive the moments with our exclusive footage.</p>
+      <div class="hero-buttons">
+        <button onclick="window.location.href='#classes'">Book a Class</button>
+        <button onclick="window.location.href='your-footage-download-link.zip'">Download Footage</button>
       </div>
     </div>
   </section>
+
+  <section id="classes">
+    <h2>Book Your Dance Class</h2>
+    <p>Explore a variety of dance styles, from salsa to hip-hop. Choose your schedule and join the fun!</p>
+  </section>
+
+  <section id="events">
+    <h2>Upcoming Events</h2>
+    <p>Stay updated with our latest dance events and competitions. Never miss a beat!</p>
+  </section>
+
+  <section id="footage">
+    <h2>Relive the Magic</h2>
+    <p>Watch exclusive footage from our previous dance sessions and events.</p>
+  </section>
+
+  <section class="cta-buttons">
+    <button onclick="window.location.href='#classes'">Book a Class</button>
+    <button onclick="alert('Thank you for subscribing!')">Subscribe to Newsletter</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dancing with Habi. All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
