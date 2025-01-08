@@ -3,16 +3,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
-  }
-  
-  /* Header Styles */
-  header {
+}
+
+/* Header Styles */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,24 +21,24 @@
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
     z-index: 1000;
-  }
-  
-  .logo-container img {
+}
+
+.logo-container img {
     height: 40px;
     margin-right: 10px;
-  }
-  .logo-container {
+}
+
+.logo-container {
     display: flex;
     align-items: center;
     font-family: 'Brush Script MT', cursive;
-  }
-  
-  nav {
+}
+
+/* Navigation Menu */
+nav {
     flex: 1;
     text-align: center;
   }
-  
-  /* Dropdown Menu */
 .nav-menu {
     list-style: none;
     display: inline-flex;
@@ -60,8 +60,8 @@
     color: #ffd700;
 }
 
-/* Arrow Indicator */
-.nav-menu a::after {
+/* Arrow Indicator for Main Menu Only */
+.main-link::after {
     content: ' \25BC'; /* Down-pointing arrow */
     font-size: 12px;
     margin-left: 5px;
@@ -70,12 +70,13 @@
 .nav-menu .dropdown-menu {
     position: absolute;
     top: 100%;
-    left: 0;
+    left:
+    0;
     background: rgba(0, 0, 0, 0.9);
     list-style: none;
     padding: 10px 0;
     display: none;
-    text-align: left;
+    text-align: center;
     min-width: 150px;
     z-index: 999;
 }
@@ -120,15 +121,14 @@
     background: #fff;
 }
 
-  
-  /* Hero Section */
-  .hero {
+/* Hero Section */
+.hero {
     position: relative;
     height: 100vh;
     overflow: hidden;
-  }
-  
-  .hero video {
+}
+
+.hero video {
     position: absolute;
     top: 0;
     left: 0;
@@ -136,49 +136,28 @@
     height: 100%;
     object-fit: cover;
     z-index: -1;
-  }
-  
-/* Get Quote Button */
-.header-right {
-    margin-left: auto;
 }
 
-.get-quote {
-    padding: 10px 20px;
-    font-size: 14px;
-    border: none;
-    background: #ffd700;
-    color: #000;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
-
-.get-quote:hover {
-    background: #fff;
-}
-
-  
-  .hero-content {
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  
-  .hero-content h1 {
+}
+
+.hero-content h1 {
     font-size: 2.5rem;
     text-transform: uppercase;
     margin-bottom: 20px;
-  }
-  
-  .hero-content p {
+}
+
+.hero-content p {
     font-size: 1rem;
     margin-bottom: 30px;
-  }
-  
-  .hero-buttons {
+}
+
+.hero-buttons {
     position: absolute;
     bottom: -50px;
     left: 50%;
@@ -186,28 +165,27 @@
     display: flex;
     justify-content: center;
     gap: 15px;
-  }
-  
-  .hero-buttons button {
+}
+
+.hero-buttons button {
     padding: 15px 30px;
     font-size: 1rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-  
-  .hero-buttons button:first-child {
+}
+
+.hero-buttons button:first-child {
     background: #ffd700;
     color: #000;
-  }
-  
-  .hero-buttons button:last-child {
+}
+
+.hero-buttons button:last-child {
     background: #333;
     color: #fff;
-  }
-  
-  .hero-buttons button:hover {
+}
+
+.hero-buttons button:hover {
     opacity: 0.9;
-  }
-  
+}
