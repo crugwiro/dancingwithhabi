@@ -14,8 +14,7 @@ document.addEventListener('scroll', () => {
 
       // Only show sections when in the second page's viewport
       if (
-        scrollPosition + windowHeight > featuredTop &&
-        scrollPosition < featuredTop + featuredHeight
+        scrollPosition + (featuredHeight - 600) > featuredTop  
       ) {
         if (isLeft) section.classList.add('appear-left');
         if (isRight) section.classList.add('appear-right');
