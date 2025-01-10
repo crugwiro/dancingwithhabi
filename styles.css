@@ -199,7 +199,7 @@ nav {
     background-color: #f5f5f5;
     border-radius: 15px;
     margin: 50px auto;
-    width: 80%; /* Adjust width for proper centering with side sections */
+    width: 60%; /* Adjust width for proper centering with side sections */
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     position: relative;
     z-index: 1; /* Ensure it remains above sliding sections */
@@ -261,9 +261,10 @@ nav {
     width: 100%;
     height: 100%;
     pointer-events: none;
-}
-
-.side-section {
+    z-index: 2;
+  }
+  
+  .side-section {
     position: absolute;
     width: 250px;
     padding: 20px;
@@ -273,73 +274,50 @@ nav {
     opacity: 0;
     transform: translateX(0);
     transition: all 0.5s ease-out;
+    visibility: hidden;
     pointer-events: auto;
-}
-
-/* Left Section */
-.side-section.left {
+  }
+  
+  /* Initial Hidden State */
+  .side-section.left {
     left: -300px;
     top: 50%;
     transform: translateY(-50%);
-}
-
-/* Right Sections */
-.side-section.right {
-    right: -300px;
+  }
+  
+  .side-section.right {
+    right: 300px;
     top: 20%;
-    transform: translateY(-20%);
-}
-
-.side-section.right:nth-child(3) {
+  }
+  
+  /* Specific Positioning for Right Sections */
+  .side-section.right:nth-child(3) {
     top: 60%;
-}
-
-/* Visible State */
-.side-section.appear-left {
+  }
+  
+  /* Slide-In Visible State */
+  .side-section.appear-left {
     left: 20px;
-}
-
-.side-section.appear-right {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .side-section.appear-right {
     right: 20px;
-}
-
-/* Hidden State */
-.side-section.hidden-left {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Slide-Out Hidden State */
+  .side-section.hidden-left {
     left: -300px;
-}
-
-.side-section.hidden-right {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  .side-section.hidden-right {
     right: -300px;
-}
-  
-  .side-section h3 {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 10px;
+    opacity: 0;
+    visibility: hidden;
   }
   
-  .side-section p {
-    font-size: 0.9rem;
-    color: #666;
-    margin-bottom: 10px;
-  }
-  
-  .side-section img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .cta-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #007bff;
-    color: #fff;
-    text-decoration: none;
-    font-size: 0.9rem;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-  }
-  
-  .cta-button:hover {
-    background: #0056b3;
-  }
